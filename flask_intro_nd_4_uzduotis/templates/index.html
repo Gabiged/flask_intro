@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keliamieji</title>
+</head>
+<body>
+<h>Keliamieji metai:</h>
+{% if (metai % 400 == 0) or (metai % 100 != 0 and metai % 4 == 0) %}
+<p>{{keliamieji}}</p>
+{%endif%}
+{%endfor%}
+</body>
+</html>
